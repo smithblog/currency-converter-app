@@ -1,0 +1,30 @@
+<ion-view title="{{ 'page.creditcard.title' | translate}}">
+
+    <ion-nav-buttons side="secondary">
+        <button class="button button-clear button-icon ion-ios-plus-empty" ui-sref="creditcard-new"></button>
+    </ion-nav-buttons>
+
+    <ion-header-bar class="bar-dark bar-subheader item-input-inset">
+        <label class="item-input-wrapper">
+            <i class="icon ion-ios-search placeholder-icon"></i>
+            <input type="search" placeholder="{{ 'page.creditcard.search' | translate }}" ng-model="searchText">
+        </label>
+    </ion-header-bar>
+
+    <ion-content>
+        <ion-list can-swipe="true">
+            <ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-class="{'creditcard-selected':isAdded(cc)}" ng-click="selectCreditCard(cc)" ng-repeat="cc in creditcards | filter:searchText | orderBy:'bank+type'">
+                <img ng-src="svg/{{cc.bank}}.svg">
+                <h2 ng-class="{'positive':isAdded(cc)}">{{cc.display}}</h2>
+                <p>{{ 'page.creditcard.transFee' | translate}}: {{cc.transactionFee}}%</p>
+                <p>{{ 'page.creditcard.rebate' | translate}}: {{cc.rebate}}%</p>
+                <i class="icon icon-payment" ng-class="'icon-payment-'+cc.type"></i>
+                <i ng-show="isAdded(cc)" class="icon ion-checkmark positive"></i>
+
+                <ion-option-button class="button-assertive" ng-click="delete(cc)">
+                    {{ 'page.creditcard.delete' | translate}}
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

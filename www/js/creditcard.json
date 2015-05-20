@@ -1,0 +1,106 @@
+[{
+    "id": "ae-bluecash-ae",
+    "bank": "ae",
+    "type": "american-express",
+    "display": "AE Blue Cash",
+    "transactionFee": "2",
+    "rebate": "1.25"
+}, {
+    "id": "citibank-rewards-unionpay",
+    "bank": "citibank",
+    "type": "unionpay",
+    "display": "Citibank Rewards 銀聯",
+    "transactionFee": "0",
+    "rebate": "0.4"
+}, {
+    "id": "standardcharter-executive-mastercard",
+    "bank": "standardcharter",
+    "type": "mastercard",
+    "display": "渣打行政人員白金",
+    "transactionFee": "1.95",
+    "rebate": "2"
+}, {
+    "id": "hsbc-visa-signature",
+    "bank": "hsbc",
+    "type": "visa",
+    "display": "滙豐 Visa Signature",
+    "transactionFee": "1.95",
+    "rebate": "1.6"
+}, {
+    "id": "ccb-unionpay",
+    "bank": "ccb",
+    "type": "unionpay",
+    "display": "建行銀聯",
+    "transactionFee": "0",
+    "rebate": "0.4"
+}, {
+    "id": "boc-unionpay",
+    "bank": "boc",
+    "type": "unionpay",
+    "display": "中銀銀聯",
+    "transactionFee": "0",
+    "rebate": "0.4"
+}, {
+    "id": "bea-flyerworld-mastercard",
+    "bank": "bea",
+    "type": "mastercard",
+    "display": "東亞Flyer World",
+    "transactionFee": "1.95",
+    "rebate": "0.64"
+}, {
+    "id": "dbs-eminent-visa",
+    "bank": "dbs",
+    "type": "visa",
+    "display": "DBS Eminent Card",
+    "transactionFee": "1.95",
+    "rebate": "6"
+}, {
+    "id": "winglung-xcite-visa",
+    "bank": "winglung",
+    "type": "visa",
+    "display": "永隆 xcite",
+    "transactionFee": "1",
+    "rebate": "0.5"
+}, {
+    "id": "hangseng-worldmaster-mastercard",
+    "bank": "hangseng",
+    "type": "mastercard",
+    "display": "恒生World MasterCard",
+    "transactionFee": "1.95",
+    "rebate": "2"
+}, {
+    "id": "shacom-unionpay",
+    "bank": "shacom",
+    "type": "unionpay",
+    "display": "上商銀聯",
+    "transactionFee": "0",
+    "rebate": "1.2"
+}, {
+    "id": "bankcomm-unionpay",
+    "bank": "bankcomm",
+    "type": "unionpay",
+    "display": "交行銀聯",
+    "transactionFee": "0",
+    "rebate": "0.8"
+}, {
+    "id": "winghang-unionpay",
+    "bank": "winghang",
+    "type": "unionpay",
+    "display": "永亨銀聯",
+    "transactionFee": "0",
+    "rebate": "0.8"
+}, {
+    "id": "dahsing-one",
+    "bank": "dahsing",
+    "type": "mastercard",
+    "display": "大新ONE+",
+    "transactionFee": "1.95",
+    "rebate": "1"
+}, {
+    "id": "aeon-visa",
+    "bank": "aeon",
+    "type": "visa",
+    "display": "Aeon Visa",
+    "transactionFee": "1",
+    "rebate": "0.4"
+}]

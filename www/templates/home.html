@@ -1,0 +1,43 @@
+<ion-view title="{{ 'page.home.title' | translate }}">
+    <ion-nav-buttons side="primary">
+        <button class="button button-icon icon ion-gear-b" ui-sref="settings"></button>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="secondary">
+        <button class="button button-clear" ng-click="data.showEdit=!data.showEdit" ng-show="creditcards.length > 0">{{ data.showEdit ? 'action.complete' : 'action.edit' | translate }}</button>
+    </ion-nav-buttons>
+
+    <ion-content ng-class="{'has-calculator-pad':data.keypadShow}">
+        <ion-list show-delete="data.showEdit" show-reorder="data.showEdit">
+            <ion-item class="item-icon-left" ng-click="showKeypad()">
+                <i class="icon flag-icon" ng-class="flagIcon(settings.foreignCurrency)"></i>
+                <span class="padding-left">{{ 'currency.'+settings.foreignCurrency | translate}} </span>
+                <span class="amount-right assertive">{{data.amount}}</span>
+            </ion-item>
+
+            <div class="item item-divider">
+                {{'page.home.cash' | translate }} <small class="dark">(1 {{settings.foreignCurrency}} = {{settings.exchangeRate}} {{settings.baseCurrency}})</small>
+            </div>
+
+            <ion-item class="item-icon-left">
+                <i class="icon flag-icon" ng-class="flagIcon(settings.baseCurrency)"></i>
+                <span class="padding-left">{{ 'currency.'+settings.baseCurrency | translate}}</span>
+                <span class="amount-right">{{amount() | number}}</span>
+            </ion-item>
+
+            <div class="item item-divider">
+                {{'page.home.creditcard' | translate }} <small class="dark">(1 {{settings.foreignCurrency}} = {{settings.onlineRate}} {{settings.baseCurrency}})</small>
+            </div>
+
+            <ion-item class="item-remove-animate item-icon-left" ng-repeat="cc in creditcards">
+                <i class="icon flag-icon bank-icon" ng-class="'bank-icon-'+cc.bank"></i>
+                <span class="padding-left">{{cc.display}}</span>
+                <span class="amount-right" ng-class="{'positive':isMin(cc)}">{{ccAmount(cc) | number}}</span>
+                <ion-delete-button class="ion-minus-circled" ng-click="onDelete($index)"></ion-delete-button>
+                <ion-reorder-button class="ion-navicon" on-reorder="onReorder(cc,$fromIndex-2, $toIndex-2)"></ion-reorder-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+
+    <keypad ng-model="data.amount" ng-show="data.keypadShow" class="animate-hide"></keypad>
+</ion-view>

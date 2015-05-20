@@ -1,0 +1,106 @@
+.flag-icon-eu {
+    background-image: url(../svg/eu.svg);
+}
+
+.bank-icon-hsbc {
+    background-image: url(../svg/hsbc-icon.svg);
+}
+
+.bank-icon-standardcharter {
+    background-image: url(../svg/standardcharter-icon.svg);
+}
+
+.bank-icon-hangseng {
+    background-image: url(../svg/hangseng-icon.svg);
+}
+
+.bank-icon-dbs {
+    background-image: url(../svg/dbs-icon.svg);
+}
+
+.bank-icon-citibank {
+    background-image: url(../svg/citibank-icon.svg);
+}
+
+.bank-icon-bea {
+    background-image: url(../svg/bea-icon.svg);
+}
+
+.bank-icon-aeon {
+    background-image: url(../svg/aeon-icon.svg);
+}
+
+.bank-icon-ae {
+    background-image: url(../svg/ae-icon.svg);
+}
+
+.bank-icon-citic {
+    background-image: url(../svg/citic-icon.svg);
+}
+
+.bank-icon-bankcomm {
+    background-image: url(../svg/bankcomm-icon.svg);
+}
+
+.bank-icon-ccb {
+    background-image: url(../svg/ccb-icon.svg);
+}
+
+.bank-icon-chonghing {
+    background-image: url(../svg/chonghing-icon.svg);
+}
+
+.bank-icon-fubon {
+    background-image: url(../svg/fubon-icon.svg);
+}
+
+.bank-icon-dahsing {
+    background-image: url(../svg/dahsing-icon.svg);
+}
+
+.bank-icon-shacom {
+    background-image: url(../svg/shacom-icon.svg);
+}
+
+.bank-icon-winghang {
+    background-image: url(../svg/winghang-icon.svg);
+}
+
+.bank-icon-boc {
+    background-image: url(../svg/boc-icon.svg);
+}
+
+.bank-icon-icbc {
+    background-image: url(../svg/icbc-icon.svg);
+}
+
+.bank-icon-winglung {
+    background-image: url(../svg/winglung-icon.svg);
+}
+
+.icon-payment {
+    width: 100%;
+    height: 100%;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.icon-payment-visa {
+    content: url(../svg/visa.svg);
+}
+
+.icon-payment-mastercard {
+    content: url(../svg/mastercard.svg);
+}
+
+.icon-payment-unionpay {
+    content: url(../svg/unionpay.svg);
+}
+
+.icon-payment-american-express {
+    content: url(../svg/ae.svg);
+}
+
+.icon-payment-jcb {
+    content: url(../svg/jcb.svg);
+}

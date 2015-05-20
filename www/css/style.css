@@ -1,1 +1,47 @@
 /* Empty. Add your own CSS if you like */
+
+.no-padding {
+    padding: 0;
+}
+
+.calculator-pad {
+    height: 200px;
+    display: block;
+}
+
+.has-calculator-pad {
+    bottom: 200px;
+}
+
+.amount-right {
+    position: absolute;
+    right: 24px;
+}
+
+.bar button.button-key {
+    font-size: 24px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.item-icon-left .bank-icon {
+    max-height: 32px;
+    top: 10px;
+}
+
+.creditcard-selected .item-content {
+    background-color: #D9D9D9;
+}
+
+.animate-hide {
+    -webkit-transition: all linear 150ms;
+    transition: all linear 150ms;
+}
+
+.animate-hide.ng-hide {
+    height: 0;
+}
+
+.spinner svg {
+    height: 16px;
+}

@@ -1,0 +1,45 @@
+<ion-view title="{{ 'page.settings.title' | translate}}">
+
+    <ion-content>
+        <div class="list">
+            <ion-list>
+                <ion-item class="item-select">
+                    {{ 'page.settings.foreignCurrency' | translate }}
+                    <select ng-model="settings.foreignCurrency" ng-options="'currency.'+currency | translate for currency in currencies" ng-change="updateRate()"></select>
+                </ion-item>
+
+                <ion-item class="item-select">
+                    {{ 'page.settings.baseCurrency' | translate }}
+                    <select ng-model="settings.baseCurrency" ng-options="'currency.'+currency | translate for currency in currencies" ng-change="updateRate()"></select>
+                </ion-item>
+
+                <ion-item ng-click="showKeypad()">
+                    {{ 'page.settings.cashExRate' | translate }}
+                    <span class="amount-right assertive">{{settings.exchangeRate}}</span>
+                </ion-item>
+
+                <ion-item ng-click="updateRate(true)">
+                    {{ 'page.settings.onlineExRate' | translate }}
+                    <i ng-show="!data.loading" class="icon ion-refresh padding-left"></i>
+                    <ion-spinner icon="spiral" ng-show="data.loading"></ion-spinner>
+                    <span class="amount-right white">{{settings.onlineRate}}</span>
+                </ion-item>
+
+                <ion-item>
+                    {{ 'page.settings.lastUpdateTime' | translate }}
+                    <span class="amount-right" am-time-ago="settings.lastUpdateTime"></span>
+                </ion-item>
+            </ion-list>
+        </div>
+
+        <ion-list>
+            <ion-item class="item-icon-right" ui-sref="creditcard">
+                {{ 'page.settings.creditcard' | translate }}
+                <i class="icon ion-ios-arrow-forward"></i>
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+
+    <keypad ng-model="settings.exchangeRate" ng-show="data.keypadShow" class="animate-hide"></keypad>
+</ion-view>

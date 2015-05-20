@@ -1,7 +1,12 @@
 {
-  "name": "HelloIonic",
+  "name": "currency-converter-app",
   "private": "true",
   "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.0.0"
+    "ionic": "driftyco/ionic-bower#1.0.0",
+    "ngstorage": "~0.3.0",
+    "ngCordova": "~0.1.15-alpha",
+    "angular-moment": "~0.10.1",
+    "angular-translate": "~2.7.0",
+    "angular-translate-loader-static-files": "~2.7.0"
   }
 }

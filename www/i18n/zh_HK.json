@@ -1,0 +1,91 @@
+{
+    "action": {
+        "edit": "編輯",
+        "complete": "完成",
+        "save": "儲存"
+    },
+    "page": {
+        "home": {
+            "title": "海外簽賬計算機",
+            "cash": "現金",
+            "creditcard": "信用卡"
+        },
+        "settings": {
+            "title": "設定",
+            "foreignCurrency": "外幣",
+            "baseCurrency": "本地貨幣",
+            "cashExRate": "現金兌換價",
+            "onlineExRate": "網上參考價",
+            "lastUpdateTime": "最後更新時間",
+            "creditcard": "信用卡管理"
+        },
+        "creditcard": {
+            "title": "信用卡管理",
+            "search": "搜尋",
+            "transFee": "手續費",
+            "rebate": "回贈",
+            "delete": "刪除"
+        },
+        "creditcardNew": {
+            "title": "新增信用卡",
+            "bank": "銀行",
+            "cardType": "信用卡類別",
+            "display": "名稱",
+            "display_placeholder": "顯示名稱",
+            "transFee": "手續費",
+            "rebate": "回贈"
+        }
+    },
+    "dialog": {
+        "no_network_title": "沒有可用的網絡",
+        "no_network_sub_title": "請檢查網絡連線",
+        "no_network_button": "確定"
+    },
+    "currency": {
+        "USD": "USD 美元",
+        "EUR": "EUR 歐元",
+        "GBP": "GBP 英鎊",
+        "JPY": "JPY 日元",
+        "SGD": "SGD 新加坡元",
+        "AUD": "AUD 澳元",
+        "NZD": "NZD 紐西蘭元",
+        "CHF": "CHF 瑞士法郎",
+        "CAD": "CAD 加拿大元",
+        "MYR": "MYR 馬來西亞元",
+        "TWD": "TWD 新台幣",
+        "CNY": "CNY 人民幣",
+        "PHP": "PHP 菲律賓披索",
+        "THB": "THB 泰銖",
+        "KRW": "KRW 韓圜",
+        "AED": "AED 迪拉姆",
+        "HKD": "HKD 港元"
+    },
+    "cardType": {
+        "visa": "Visa",
+        "mastercard": "MasterCard",
+        "unionpay": "銀聯",
+        "american-express": "American Express",
+        "jcb": "JCB"
+    },
+    "bank": {
+        "hsbc": "滙豐銀行",
+        "hangseng": "恆生銀行",
+        "standardcharter": "渣打銀行",
+        "dbs": "星展銀行",
+        "citibank": "花旗銀行",
+        "boc": "中國銀行",
+        "bea": "東亞銀行",
+        "aeon": "AEON",
+        "citic": "中信銀行",
+        "bankcomm": "交通銀行",
+        "ccb": "中國建設銀行",
+        "chonghing": "創興銀行",
+        "dahsing": "大新銀行",
+        "fubon": "富邦銀行",
+        "icbc": "工商銀行",
+        "winghang": "華僑永亨銀行",
+        "ae": "美國運通",
+        "winglung": "永隆銀行",
+        "shacom": "上海商業銀行"
+    }
+}

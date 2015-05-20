@@ -1,0 +1,37 @@
+<ion-view title="{{ 'page.creditcardNew.title' | translate }}">
+
+    <ion-nav-buttons side="secondary">
+        <button class="button button-clear" ng-click="save(cc)">{{ 'action.save' | translate }}</button>
+    </ion-nav-buttons>
+
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-select">
+                {{ 'page.creditcardNew.bank' | translate }}
+                <select ng-model="cc.bank" ng-options="'bank.'+bank | translate for bank in banks"></select>
+            </ion-item>
+
+            <ion-item class="item-select">
+                {{ 'page.creditcardNew.cardType' | translate }}
+                <select ng-model="cc.type" ng-options="'cardType.'+type | translate for type in ccTypes"></select>
+            </ion-item>
+
+            <ion-item class="item-input">
+                {{ 'page.creditcardNew.display' | translate }}
+                <input type="text" ng-model="cc.display" placeholder="{{'page.creditcardNew.display_placeholder' | translate}}" class="text-right">
+            </ion-item>
+
+            <ion-item ng-click="updateModel('transactionFee')">
+                <span>{{ 'page.creditcardNew.transFee' | translate }} (%)</span>
+                <span class="amount-right">{{cc.transactionFee}}</span>
+            </ion-item>
+            <ion-item ng-click="updateModel('rebate')">
+                <span>{{ 'page.creditcardNew.rebate' | translate }} (%)</span>
+                <span class="amount-right">{{cc.rebate}}</span>
+            </ion-item>
+
+        </ion-list>
+    </ion-content>
+
+    <keypad ng-model="data.model" ng-show="data.keypadShow" class="animate-hide"></keypad>
+</ion-view>

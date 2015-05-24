@@ -113,16 +113,6 @@ angular.module('currencyConverter.controllers', [])
             });
         };
 
-        $scope.onFocus = function (input) {
-            if (input === 'foreign') {
-                $scope.amount.base = 0;
-                $scope.amount.foreign = "";
-            } else {
-                $scope.amount.foreign = 0;
-                $scope.amount.base = "";
-            }
-        };
-
         $scope.showKeypad = function () {
             $scope.data.keypadShow = true;
             $scope.data.amount = '0';

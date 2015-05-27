@@ -163,8 +163,8 @@ angular.module('currencyConverter.controllers', [])
 }
 ])
 
-.controller('CreditCardCtrl', ['$scope', '$ionicListDelegate', '$log', '$localStorage', 'CreditCardFileService',
-    function ($scope, $ionicListDelegate, $log, $localStorage, CreditCardFileService) {
+.controller('CreditCardCtrl', ['$scope', '$log', '$localStorage', 'CreditCardFileService',
+    function ($scope, $log, $localStorage, CreditCardFileService) {
 
         $scope.creditcard = {};
 
